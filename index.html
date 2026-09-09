@@ -38,35 +38,43 @@
     display: block;
     width: 100%;
     padding: 18px;
-    border-radius: 14px;
+    border-radius: 14px 14px 0 0;
     font-size: 17px;
     font-weight: 600;
     text-decoration: none;
-    margin-bottom: 16px;
     transition: transform 0.1s ease;
   }
   .btn:active { transform: scale(0.97); }
+  .group-good {
+    background: #2e7d32;
+    border-radius: 14px;
+    margin-bottom: 36px;
+    overflow: hidden;
+  }
   .btn-good {
     background: #2e7d32;
     color: #fff;
+  }
+  .star-instructions {
+    font-size: 14px;
+    color: #ffffff;
+    background: #256a29;
+    border-radius: 0 0 14px 14px;
+    padding: 12px 14px;
+    line-height: 1.4;
+  }
+  .divider {
+    font-size: 12px;
+    color: #b5a898;
+    margin-bottom: 16px;
   }
   .btn-regular {
     background: #f5f5f5;
     color: #4a3a2a;
     border: 2px solid #e0d5c5;
+    border-radius: 14px;
   }
   .emoji { font-size: 28px; display: block; margin-bottom: 4px; }
-  .star-instructions {
-    font-size: 14px;
-    color: #a68a3f;
-    background: #fff8e6;
-    border: 1px solid #f0deA0;
-    border-radius: 10px;
-    padding: 10px 12px;
-    margin-top: -6px;
-    margin-bottom: 20px;
-    line-height: 1.4;
-  }
   footer {
     margin-top: 28px;
     font-size: 12px;
@@ -79,15 +87,19 @@
     <h1>¿Cómo fue tu experiencia en Carnicería Gaby?</h1>
     <p class="subtitle">Tu opinión nos ayuda a mejorar cada día</p>
 
-    <a class="btn btn-good" href="https://g.page/r/CRocUlYhT2FzEBM/review" target="_blank" rel="noopener">
-      <span class="emoji">😊</span>
-      Muy bien — dejar reseña en Google
-    </a>
-    <p class="star-instructions">⭐⭐⭐⭐⭐<br>Tocá las <strong>5 estrellitas hasta que se pinten de amarillo</strong> y después escribí tu comentario</p>
+    <div class="group-good">
+      <a class="btn btn-good" href="https://g.page/r/CRocUlYhT2FzEBM/review" target="_blank" rel="noopener">
+        <span class="emoji">😊</span>
+        Muy bien — dejar reseña en Google
+      </a>
+      <p class="star-instructions">⭐⭐⭐⭐⭐<br>Tocá las <strong>5 estrellitas hasta que se pinten de amarillo</strong> y después escribí tu comentario</p>
+    </div>
+
+    <p class="divider">¿Algo no te gustó?</p>
 
     <a class="btn btn-regular" href="https://wa.me/5492291457663?text=Hola%2C%20quiero%20contarte%20algo%20sobre%20mi%20visita%20a%20Carnicer%C3%ADa%20Gaby" target="_blank" rel="noopener">
       <span class="emoji">😐</span>
-      Podría mejorar — contanos directamente
+      Contanos directamente
     </a>
 
     <footer>Carnicería Gaby · Miramar</footer>
